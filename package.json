@@ -1,0 +1,42 @@
+{
+  "name": "@fabien0102/tailwind-aria",
+  "version": "1.0.0",
+  "description": "TailwindCSS aria-* attribute utilities plugin",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "keywords": [
+    "tailwindcss",
+    "plugin",
+    "aria"
+  ],
+  "author": "Fabien BERNARD",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
